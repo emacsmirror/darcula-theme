@@ -1,4 +1,4 @@
-darcula-theme-emacs
+darcula-theme-emacs [![Melpa Status](http://melpa.milkbox.net/packages/darcula-theme-badge.svg)](http://melpa.milkbox.net/#/darcula-theme)
 ===================
 
 Emacs theme inspired by IntelliJ's Darcula.
