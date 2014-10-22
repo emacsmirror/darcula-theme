@@ -10,15 +10,9 @@ Distributed on [MELPA](http://melpa.milkbox.net/), use by installing the `darcul
 ;;(set-frame-font "Inconsolata-16") ;; your preferred main font face here
 ```
 
-![example](darcula-example.jpg)
-
-Some of the colours above are only contextually possible in Scala when using [ENSIME](https://github.com/ensime/ensime-server). Use the following to set up the additional semantic faces:
+Note that semantic highlighting in the below example is only achievable in Scala when using [ENSIME](https://github.com/ensime/ensime-server) with the following semantic highlighting overlays:
 
 ```elisp
-(custom-set-faces
- '(scala-font-lock:var-face
-   ((t (:foreground "#9876aa" :underline (:style wave :color "yellow") :inherit 'font-lock-variable-name-face)))))
-
 (setq ensime-sem-high-faces
       ;; NOTE: Inconsolata doesn't have italics
       ;; FURTHER NOTE: these are overlays, not faces
@@ -34,3 +28,5 @@ Some of the colours above are only contextually possible in Scala when using [EN
         (object . (:foreground "#6897bb" :slant italic))
         (package . (:foreground "#cc7832"))))
 ```
+
+![example](darcula-example.jpg)
