@@ -27,15 +27,49 @@
   "Inspired by IntelliJ's Darcula theme")
 
 ;; NOTE: https://github.com/alezost/alect-themes/#emacs-2431-and-earlier
+(when (version< emacs-version "24.4")
+  (progn
+    ;; WORKAROUND https://github.com/alezost/alect-themes/#emacs-2431-and-earlier
+    (defun face-spec-recalc-new (face frame)
+      "Improved version of `face-spec-recalc'."
+      (while (get face 'face-alias)
+        (setq face (get face 'face-alias)))
+      (face-spec-reset-face face frame)
+      (let ((theme-faces (get face 'theme-face)))
+        (if theme-faces
+            (dolist (spec (reverse theme-faces))
+              (face-spec-set-2 face frame (cadr spec)))
+          (face-spec-set-2 face frame (face-default-spec face))))
+      (face-spec-set-2 face frame (get face 'face-override-spec)))
+    (defadvice face-spec-recalc (around new-recalc (face frame) activate)
+      "Use `face-spec-recalc-new' instead."
+      (face-spec-recalc-new face frame))))
 
 ;; "C-u C-x =" useful for inspecting misbehaving faces.
 ;; "M-x list-faces-display" useful for listing everything that new major modes introduce.
+
+(custom-theme-set-variables
+ 'darcula
+ '(ensime-sem-high-faces
+   ;; NOTE: Inconsolata doesn't have italics
+   ;; FURTHER NOTE: these are overlays, not faces
+   '((var . (:foreground "#9876aa" :underline (:style wave :color "yellow")))
+     (val . (:foreground "#9876aa"))
+     (varField . (:slant italic))
+     (valField . (:foreground "#9876aa" :slant italic))
+     (functionCall . (:foreground "#a9b7c6"))
+     (operator . (:foreground "#cc7832"))
+     (param . (:foreground "#a9b7c6"))
+     (class . (:foreground "#4e807d"))
+     (trait . (:foreground "#4e807d" :slant italic))
+     (object . (:foreground "#6897bb" :slant italic))
+     (package . (:foreground "#cc7832")))))
 
 (custom-theme-set-faces
  'darcula
  '(default ((t (:inherit nil :stipple nil :background "#2B2B2B" :foreground "#a9b7c6"
                          :inverse-video nil :box nil :strike-through nil :overline nil
-                         :underline nil :slant normal :weight normal :height 160
+                         :underline nil :slant normal :weight normal :height 120
                          :width normal :foundry nil :family "Inconsolata"))))
  '(cursor ((t (:foreground "#042028" :background "#708183"))))
  '(error ((t (:inherit 'default :underline (:style wave :color "red")))))
