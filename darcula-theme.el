@@ -81,6 +81,7 @@
  '(sbt:error ((t (:inherit 'default :foreground "red"))))
  '(maker:error ((t (:inherit 'default :foreground "red"))))
  '(ensime-warnline-highlight ((t (:inherit 'font-lock-warning-face))))
+ '(ensime-compile-infoline ((t (:foreground "#404040" :inherit 'default))))
  ;; http://www.gnu.org/software/emacs/manual/html_node/elisp/Faces-for-Font-Lock.html
  '(font-lock-warning-face ((t (:underline (:style wave :color "orange" :inherit 'default)))))
                                         ;for a construct that is peculiar, or that greatly changes the meaning of other text.
