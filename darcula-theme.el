@@ -66,7 +66,9 @@
      (class . (:foreground "#4e807d"))
      (trait . (:foreground "#4e807d" :slant italic))
      (object . (:foreground "#6897bb" :slant italic))
-     (package . (:foreground "#cc7832")))))
+     (package . (:foreground "#cc7832"))
+     (deprecated . (:strike-through "#606060"))
+     )))
 
 (custom-theme-set-faces
  'darcula
