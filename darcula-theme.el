@@ -4,7 +4,6 @@
 
 ;; Author: Sam Halliday <Sam.Halliday@gmail.com>
 ;; Keywords: faces
-;; Package-Version: 20150622.708
 ;; URL: https://github.com/fommil/darcula-theme-emacs
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -67,7 +66,7 @@
      (trait . (:foreground "#4e807d" :slant italic))
      (object . (:foreground "#6897bb" :slant italic))
      (package . (:foreground "#cc7832"))
-     (deprecated . (:strike-through "#606060"))
+     (deprecated . (:strike-through "#a9b7c6"))
      )))
 
 (custom-theme-set-faces
