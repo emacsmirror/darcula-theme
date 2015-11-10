@@ -1,9 +1,9 @@
-darcula-theme-emacs [![Melpa Status](http://melpa.milkbox.net/packages/darcula-theme-badge.svg)](http://melpa.milkbox.net/#/darcula-theme)
+darcula-theme-emacs [![Melpa Status](https://melpa.org/packages/darcula-theme-badge.svg)](http://melpa.milkbox.net/#/darcula-theme)
 ===================
 
 Emacs theme inspired by IntelliJ's Darcula.
 
-Distributed on [MELPA](http://melpa.milkbox.net/), use by installing the `darcula-theme` package and then
+Distributed on [MELPA](https://melpa.org/), use by installing the `darcula-theme` package and then
 
 ```elisp
 (require 'darcula-theme)
