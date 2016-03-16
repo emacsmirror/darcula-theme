@@ -3,7 +3,7 @@ darcula-theme-emacs [![Melpa Status](https://melpa.org/packages/darcula-theme-ba
 
 Emacs theme inspired by IntelliJ's Darcula.
 
-Distributed on [MELPA](https://melpa.org/), installation is recommended via 
+Distributed on [MELPA](https://melpa.org/), installation is recommended via [use-package](https://github.com/jwiegley/use-package):
 
 ```elisp
 (use-package darcula-theme
