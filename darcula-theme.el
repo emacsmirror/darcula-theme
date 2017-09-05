@@ -144,6 +144,7 @@
  '(company-tooltip-common ((t (:inherit 'mode-line-emphasis))))
  '(company-tooltip-common-selection ((t (:inherit 'highlight))))
  '(company-tooltip-annotation ((t (:inherit 'mode-line))))
+ '(markdown-code-face ((t (:background "#3B3B3B"))))
  ;; http://www.gnu.org/software/emacs/manual/html_node/ediff/Highlighting-Difference-Regions.html
  '(ediff-current-diff-A ((t (:background "#3B2B2B"))))
  '(ediff-current-diff-B ((t (:background "#2B3B2B"))))
