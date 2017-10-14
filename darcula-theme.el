@@ -144,8 +144,9 @@
  '(company-tooltip-common ((t (:inherit 'mode-line-emphasis))))
  '(company-tooltip-common-selection ((t (:inherit 'highlight))))
  '(company-tooltip-annotation ((t (:inherit 'mode-line))))
- '(org-code ((t (:background "#2F2F2F"))))
+ '(org-code ((t (:foreground "#c9d7e6"))))
  '(org-verbatim ((t (:inherit 'org-code))))
+ '(org-block ((t (:inherit 'org-code))))
  '(markdown-code-face ((t (:inherit 'org-code))))
  '(markdown-pre-face ((t (:inherit 'org-verbatim))))
  ;; http://www.gnu.org/software/emacs/manual/html_node/ediff/Highlighting-Difference-Regions.html
