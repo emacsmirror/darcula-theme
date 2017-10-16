@@ -147,7 +147,8 @@
  '(org-code ((t (:inherit 'default))))
  '(org-block ((t (:inherit 'org-code))))
  '(org-verbatim ((t (:foreground "#c9d7e6"))))
- '(markdown-code-face ((t (:inherit 'org-code))))
+ ;; WORKAROUND https://github.com/jrblevin/markdown-mode/issues/273
+ '(markdown-code-face ((t (:inherit 'org-code :background "#2B2B2B"))))
  '(markdown-pre-face ((t (:inherit 'org-verbatim))))
  ;; http://www.gnu.org/software/emacs/manual/html_node/ediff/Highlighting-Difference-Regions.html
  '(ediff-current-diff-A ((t (:background "#3B2B2B"))))
