@@ -71,7 +71,7 @@
 
 (custom-theme-set-faces
  'darcula
- '(default ((t (:inherit nil :stipple nil :background "#2B2B2B" :foreground "#a9b7c6"
+ '(default ((t (:inherit nil :stipple nil :background "#1B1B1B" :foreground "#a9b7c6"
                          :inverse-video nil :box nil :strike-through nil :overline nil
                          :underline nil :slant normal :weight normal
                          :width normal :foundry nil))))
@@ -148,7 +148,7 @@
  '(org-block ((t (:inherit 'org-code))))
  '(org-verbatim ((t (:foreground "#c9d7e6"))))
  ;; WORKAROUND https://github.com/jrblevin/markdown-mode/issues/273
- '(markdown-code-face ((t (:inherit 'org-code :background "#2B2B2B"))))
+ '(markdown-code-face ((t (:inherit 'org-code :background "#1B1B1B"))))
  '(markdown-pre-face ((t (:inherit 'org-verbatim))))
  ;; http://www.gnu.org/software/emacs/manual/html_node/ediff/Highlighting-Difference-Regions.html
  '(ediff-current-diff-A ((t (:background "#3B2B2B"))))
